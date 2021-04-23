@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo Clases</title>
+</head>
+<body class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja1">
+			<h1>:Active</h1>
+			<p>Representa un elemento que el usuario está activando,  Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta.</p>
+			<p>Ejemplo:</p>
+			<a href="#">SOY ACTIVE</a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja2">
+			<h1>:Checked</h1>
+			<p>Representa cualquier radio, checkbox, u option que está marcado o conmutado a un estado on.</p>
+			<p>Ejemplo:</p>
+			<p> Para continuar debe aceptar los terminos y condiciones:</p>
+			<div>
+			  <input type="checkbox" name="my-input" id="checkbox">
+			  <label for="checkbox">Acepto los terminos y condiciones</label>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja3">
+			<h1>:Default</h1>
+			<p>Representa cualquier elemento de formulario que sea el predeterminado entre un grupo de elementos relacionados.</p>
+			<p>Ejemplo:</p>
+			<p> Seleccione su tipo de documento:</p>
+			<div>
+			  <input type="radio" name="my-input" id="ti">
+			  <label for="ti">TI</label>
+			  <input type="radio" name="my-input" id="cc" checked="checked">
+			  <label for="cc">CC</label>
+			  <input type="radio" name="my-input" id="ce">
+			  <label for="ce">CE</label>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja4">
+			<h1>:Dir</h1>
+			<p>Permite que los elementos se seleccionen en función de la dirección del lenguaje. Solo hay dos direcciones en las que el lenguaje puede fluir en un documento: de izquierda a derecha o de derecha a izquierda. </p>
+			<p>Ejemplo:</p>
+			<div dir="rtl">
+				<h3>right-to-left</h3>
+			</div>
+			<div dir="ltr">
+				<h3>left-to-right</h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja5">
+			<h1>:Disabled</h1>
+			<p>Representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede ser activado (por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada) ni aceptar el foco. </p>
+			<p>Ejemplo:</p>
+			<form action="">
+			  <input class="col-xs-10 cols-sm-10 col-md-10 col-lg-10" type="text" name="name1" placeholder="Nombre y Apellido">
+			  <input class="col-xs-10 cols-sm-10 col-md-10 col-lg-10" type="text" name="name2" placeholder="Telefono">
+			  <input class="col-xs-10 cols-sm-10 col-md-10 col-lg-10" type="text" name="name2" placeholder="Correo" disabled="disabled">
+			  <button class="col-xs-6 cols-sm-6 col-md-6 col-lg-6" type="submit" value="enviar" id="boton1">Enviar</button>
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja6">
+			<h1>:Empty</h1>
+			<p>Representa cualquier elemento que no tenga hijos. Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco). Los comentarios o las instrucciones de procesamiento no afectan si un elemento se considera vacío. </p>
+			<p>Ejemplo:</p>
+			 <form action="">
+			  <input class="col-xs-10 cols-sm-10 col-md-10 col-lg-10" type="text" id="FirstField" placeholder="tengo contenigo">
+			  <input class="col-xs-10 cols-sm-10 col-md-10 col-lg-10" type="text" id="SecondField" placeholder="tengo contenido">
+			  <button></button>
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja7">
+			<h1>:Enabled</h1>
+			<p>Representa representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él, acepta que se le introduzca texto, etc.) o si accepta el foco.</p>
+			<p>Ejemplo:</p>
+			<form action="">
+			  <input class="col-xs-10 cols-sm-10 col-md-10 col-lg-10" type="text" id="FirstField" value="habilitado">
+			  <input class="col-xs-10 cols-sm-10 col-md-10 col-lg-10" type="text" id="SecondField" value="deshabilitado" disabled>
+			  <input class="col-xs-6 cols-sm-6 col-md-6 col-lg-6" type="button" value="Enviar" id="boton">
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja8">
+			<h1>:First</h1>
+			<p> Utilizada con la regla-at @page( es usada para modificar algunas propiedades CSS cuando se va a imprimir una página web), representa la primera página de un documento impreso.</p>
+			<p>Ejemplo:</p>
+			<p>Primera página.</p>
+			<p>Segunda página.</p>
+			<button class="col-xs-6 cols-sm-6 col-md-6 col-lg-6 boton2" >Imprimir!</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja9">
+			<h1>:First-child</h1>
+			<p> Representa el primer elemento entre un grupo de elementos hermanos.</p>
+			<p>Ejemplo:</p>
+			<div class="elementos">
+				<p>Soy el primer elemento</p>
+				<p>Soy el segundo elemento</p>
+				<p>Soy el tercer elemento</p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja10">
+			<h1>:First-of-type</h1>
+			<p> Representa el primer elemento de su tipo entre un grupo de elementos hermanos.</p>
+			<p>Ejemplo:</p>
+			<div class="fot">
+				<div>Hola soy un div!</div>
+				<p>Hola soy un parrafo!</p>
+				<div>Hola soy otro div!</div>
+				<p>Hola soy otro parrafo!</p>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 caja11">
+		  <div id="fullscreen">
+          	<h1>:Fullscreen</h1>
+		   <p>Representa un elemento que se muestra cuando el navegador está en modo de pantalla completa.</p>
+           <button id="fullscreen-button">Entrar en pantalla completa</button>
+          </div>
+        </div>
+		<div class="col-md-3 col-sm-6 col-xs-12 caja12">
+			<h1>:Focus</h1>
+			<P>Representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado.</P>
+		    <input class="red-input"><br>
+		</div>
+	</div>
+	<div class="row">
+	    <div class="col-md-3 col-sm-6 col-xs-12 caja13">
+	    	<h1>:Hover</h1>
+	    	<p>Coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).</p>
+	    </div>
+		<div class="col-md-3 col-sm-6 col-xs-12 caja14">
+			<h1>:Indeterminate</h1>
+			<p>Representa cualquier elemento de formulario cuyo estado sea indeterminado.</p>
+			<div>
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+            </div>
+            <div>
+              <input type="radio" id="radio">
+              <label for="radio">Esta etiqueta comienza con el color lima.</label>
+            </div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 caja15">
+		  <h1>:In-range</h1>
+		  <p>Esta pseudo-clase es útil para dar al usuario una indicación visual de que el valor actual de un campo está dentro de los límites permitidos.</p>
+		  <form>
+            <ul> valores del 1 al 5
+             <li>
+              <input type="number" min="1" max="5">
+              <label>Tu valor esta </label>
+             </li>
+            </ul>
+          </form>
+        </div>
+		<div class="col-md-3 col-sm-6 col-xs-12 caja16">
+			<h1>:Invalid</h1>
+			<p>Esta pseudo-clase es útil para resaltar errores de campo para el usuario.</p>
+			<p>EJEMPLO:</p>
+			<input class="correo" type="email" placeholder="correo@correo.com">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 col-xs-12 caja17">
+			<h1>:Lang()</h1>
+			<p>Es utilizada para modificar elementos en función del idioma en el que se determina que están.</p>
+			<div lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+            <div lang="fr"><q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q></div>
+            <div lang="de"><q>Esta cita en aleman tiene una cita <q>anidada</q> adentro.</q></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 caja18">
+			<h1>:Last-child</h1>
+			<p>Representa el último elemento entre un grupo de elementos hermanos.</p>
+            <div class="parrafos">
+            	<p>Aqui va el parrafo 1 y no esta seleccionado</p>
+            	<p>Aqui va el parrafo 2 y no esta seleccionado</p>
+            	<p>Aqui va el parrafo 3 y este esta seleccionado</p>
+            </div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 caja19">
+			<h1>:Last-of-type</h1>
+			<p>Representa el último elemento de su tipo entre un grupo de elementos hermanos.</p>
+			<div class="elementos">
+				<div>Esto es un div</div>
+				<p>Esto es un parrafo</p>
+				<span>Esto es un span</span>
+				<p>Esto es otro parrafo</p>
+				<div>Esto es otro div</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 caja20">
+			<h1>:Left</h1>
+			<p>Representa todas las páginas de la izquierda de un documento impreso. La dirección principal de escritura del documento determina si una página es "izquierda" o "derecha".</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja21">
+			<h1>LINK</h1>
+			<p class="parrafo5">La pseudo-clase :link CSS representa un elemento que aún no se ha visitado. Coincide con cada elemento no visitado <a>, "area", o "link" que tiene un atributo href.</p>
+			<a href="#">SOY ACTIVE</a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja22">
+			<h1>:not()</h1>
+			<p>La pseudoclase :not() de CSS representa elementos que no coinciden con una lista de selectores. Como evita que se seleccionen elementos específicos, se lo conoce como la pseudoclase de negación.</p>
+			<p class="fancy">soy un ejemplo</p>
+			<div>NO, soy un ejemplo</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja23">
+			<h1>:nth-child</h1>
+			<p>La pseudo-clase :nth-child() de CSS coincide con uno o más elementos en función de su posición entre un grupo de hermanos.</p>
+			<div class="first">
+			  <span>Span 1!</span>
+			  <span>Span 2</span>
+			  <span>Span 3!</span>
+			  <span>Span 4</span>
+			  <span>Span 5!</span>
+			  <span>Span 6</span>
+			  <span>Span 7!</span>
+			</div>
+			<div class="second">
+			  <span>Span!</span>
+			  <span>Span</span>
+			  <em>Este es un `em`.</em>
+			  <span>Span</span>
+			  <span>Span!</span>
+			  <span>Span</span>
+			  <span>Span!</span>
+			  <span>Span</span>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja24">
+			<h1>:nth-last-child</h1>
+			<p>La pseudo-clase :nth-last-child() de CSS selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+			<table>
+			  <tbody>
+			    <tr>
+			      <td>Primera línea</td>
+			    </tr>
+			    <tr>
+			      <td>Segunda línea</td>
+			    </tr>
+			    <tr>
+			      <td>Tercera línea</td>
+			    </tr>
+			    <tr>
+			      <td>Cuarta línea</td>
+			    </tr>
+			    <tr>
+			      <td>Quinta línea</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja25">
+			<h1>:nth-last-of-type()</h1>
+			<p>La pseudo-clase :nth-last-of-type() CSS coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+			<div>
+			  <span>Este es un span.</span>
+			  <span>Este es otro span.</span>
+			  <em>Esto esta enfatizado.</em>
+			  <span>¡Guauu, este span se pone color lima!</span>
+			  <strike>Esto está tachado.</strike>
+			  <span>Aquí hay un último span.</span>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja26">
+			<h1>:nth-of-type</h1>
+			<p>La pseudo-clase :nth-of-type() de CSS selecciona uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos.</p>
+			<div>
+			  <p class="parrafo1">1er párrafo.</p>
+			  <p class="parrafo2">2do párrafo.</p>
+			  <p class="parrafo3">3er párrafo.</p>
+			  <p class="parrafo4">4to párrafo.</p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja27">
+			<h1>:only-child</h1>
+			<p>La pseudo-clase (en-US) :only-child de CSS representa un elemento sin hermanos. Esto es lo mismo que :first-child:last-child o :nth-child(1):nth-last-child(1), pero con una especificidad menor.</p>
+			<main>
+			  <div>
+			    <i>Soy un hijo único y solitario.</i>
+			  </div>
+			  <div>
+			    <i>Yo quiero viajar.</i><br>
+			    <b>¡Yo también!</b><br>
+			    <span>Yo también quiero viajar, <span>pero no tengo dinero.</span></span>
+			  </div>
+			</main>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja28">
+			<h1>:only-of-type</h1>
+			<p> La pseudo-clase :only-of-type CSS representa un elemento que no tiene hermanos del mismo tipo.</p>
+			<main class="color1">
+			  <div>Soy un `div` #1.</div>
+			  <p>Yo soy el único `p` entre mis hermanos.</p>
+			  <div>Soy un `div` #2.</div>
+			  <div>Soy un `div` #3.
+			    <em>Soy un `em` #1.</em>
+			    <em>Soy un `em` #2.</em>
+			  </div>
+			</main>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja29">
+			<h1>:optional</h1>
+			<p> La pseudo-clase :optional de CSS representa cualquier elemento "input", "select", o "textarea" que no tenga el atributo required establecido en él.</p>
+			<form>
+			  <label for="url_input">Ingresa una URL:</label>
+			  <input type="url" id="url_input" />
+			  <br />
+			  <br />
+			  <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+			  <input type="email" id="email_input" required/>
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja30">
+			<h1>:out-of-range</h1>
+			<p>La pseudo-clase (en-US) :out-of-range de CSS representa un elemento "input" cuyo valor actual está fuera de los límites de rango especificados por los atributos min y max.</p>
+			<form action="" id="form1">
+			  <ul>Los valores entre 1 y 10 son válidos.
+			    <li>
+			      <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+			      <label for="value1">Tu valor esta </label>
+			    </li>
+			  </ul>
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja31">
+			<h1>:read-only</h1>
+			<p>Representa un elemento que ya no es editable por el usuaro como por ejemplo un imput</p>
+			<p>Ejemplo</p>
+			<input type="text" value="Aquí puedes poner lo que quieras.">
+			<input type="text" value="Campo de solo lectura." readonly>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja32">
+			<h1>:visited</h1>
+			<p>Representa enlaces que el usuario ya ha visitado. Por motivos de privacidad, los estilos que se pueden modificar con este selector son muy limitados.</p>
+			<p>Ejemplo</p>
+			<a href="#test-visited-link">¿Ya has visitado este enlace?</a><br>
+			<a href="">Ya has visitado este enlace.</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja33">
+			<h1>:valid</h1>
+			<p>Representa cualquier elemento input u otro elemento form cuyo contenido se valide satisfactoriamente. Esto permite que los campos válidos adopten fácilmente una apariencia que ayuda al usuario a confirmar que sus datos están formateados correctamente.</p>
+			<p>Ejemplo</p>
+			<form>
+				<label for="url_input">Ingresa una URL:</label>
+				<input type="url" id="url_input" />
+			  </form>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja34">
+			<h1>:target</h1>
+			<p>Representa un elemento único (el elemento objetivo) con un id que coincide con el fragmento de la URL.</p>
+			<p>Ejemplo</p>
+			<h3>Tabla de contenido</h3>
+			<ol>
+ 				<li><a href="#p1">¡Salta al primer párrafo!</a></li>
+ 				<li><a href="#p2">¡Salta al segundo párrafo!</a></li>
+ 				<li><a href="#nowhere">Este enlace no va a ninguna parte, porque el objetivo no existe.</a></li>
+			</ol>
+			<h3>Mi artículo divertido</h3>
+			<p id="p1">Puede orientar elegir como blanco <i>este párrafo</i> utilizando un fragmento de URL. ¡Haz clic en el enlace de arriba para probar!</p>
+			<p id="p2">Este es <i>otro párrafo</i>, también accesible desde los enlaces de arriba. ¿No es encantador?</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja35">
+			<h1>:scope</h1>
+			<p>Es un elemento que forma un contexto para un bloque de estilos. Dicho elemento también representa un punto de referencia para que los selectores coincidan</p>
+			<p>Ejemplo</p>
+			<p id="para">This is a paragraph. It is not an interesting paragraph. Sorry about that.</p>
+			<p id="output"></p>
+			<p>En este caso como hay un párrafo dentro del scope (párrafo no interesante) el scope añade el segundo párrafo</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 caja36">
+			<h1>:root</h1>
+			<p>Selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento html y es idéntico al selector html, excepto que su especificidad es mayor.</p>
+			<p>Ejemplo</p>
+			<p>El fondo general de la página fue creado con la pseudoclase :root de la siguiente forma:</p>
+			<p>:root{
+				background-color: darkorchid;
+			}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 caja37">
+			<h1>:right</h1>
+			<p>:right, utilizada con la regla-at @page, representa todas las páginas de la derecha de un documento impreso.</p>
+			<p>Ejemplo</p>
+			<p>Si esta página fuera un libro y lo fueramos a imprimir las páginas de la derecha tendían una margen especial establecida en el css de esta forma:</p>
+			<p>@page :right {
+				margin: 2in 3in;
+			}</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 caja38">
+			<h1>:required</h1>
+			<p>Esta pseudo-clase es útil para resaltar campos que deben tener datos válidos antes de que se pueda enviar un formulario.</p>
+			<p>Ejemplo</p>
+			<form>
+				<label for="email_input">Introduzca una dirección de correo electrónico:</label>
+				<input type="email" id="email_input" required/>
+			  </form>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 caja39">
+			<h1>:read-write</h1>
+			<p>Representa un elemento (como un input) que es editable por el usuario.</p>
+			<p>Ejemplo</p>
+			<p contenteditable="true">¡Puedes editar este párrafo!</p>
+		</div>
+	</div>
+
+	
+
+
+</body>
+</html>
